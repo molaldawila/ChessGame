@@ -34,9 +34,10 @@ int can_print_it(char ch)
     return isalpha(ch) || isblank(ch);
 }
 
-
-int main(int argc, char *argv[])
+int main()
 {
-    print_arguments(argc, argv);
+	char *argv[]={"Aseel92","Hashem65"};
+	
+    print_arguments(2, argv);
     return 0;
 }
