@@ -1,1 +1,1 @@
-# this repository contains link list code 
+# this repository contains C code practices  
