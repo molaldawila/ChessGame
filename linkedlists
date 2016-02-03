@@ -1,0 +1,113 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdlib.h>
+ 
+typedef struct node
+{
+	int data;
+	struct node *next;
+}mynode;
+
+mynode *start =NULL;
+
+mynode *itemCreate(int data, mynode *next) {
+	mynode *item = (struct node *)(malloc(sizeof(mynode)));
+		item->data = data;
+		item->next = next;
+		return item;
+}
+int count(mynode *n)
+{
+ 	int c = 0;
+	while (n != NULL)
+	{
+		n = n->next;
+		c++;
+	}
+	return c;
+}
+void  display(mynode *r)
+{
+	if (r == NULL)
+	{
+		printf("the list is empty");
+	}
+	printf("%d Items in the linked list : ", count(r));
+	while (r != NULL)
+	{
+		printf("%d, ", r->data);
+		r = r->next;
+	}
+	printf("\n");
+}
+
+// (1,p1)->(2,p2)->(3,p2)->(4,p4)->NULL
+
+void insert(int data, int position){
+	
+    mynode * add_node=(struct node *)(malloc(sizeof(mynode)));	
+	add_node->data=data;
+
+	int count =1;
+	
+	if (position ==0)
+	{
+		add_node->next=start;
+		start=add_node;
+	}
+	else {
+			mynode * current=(struct node *)(malloc(sizeof(mynode)));
+            current=start;
+       while (count != position)	{
+    	   current=current->next;
+    	   count ++;
+    	}
+      add_node->next=current->next;
+      current->next=add_node;
+ }
+}
+
+display_item(int position){
+	
+		int count =1;
+		mynode * current=(struct node *)(malloc(sizeof(mynode)));
+        current=start;
+        
+       while (count != position){
+    	   current=current->next;
+    	   count ++;
+    	}
+      printf ("Item number %d is %d", position, current->data);
+      
+}
+
+void isEmpty ()
+{
+
+if (start==NULL){
+   printf ("the list is empty\n");}
+else {
+
+   printf ("the link is not empty\n");
+   display(start);}
+
+}
+
+int  main()
+{
+	mynode *list = NULL;
+	isEmpty();
+	list = itemCreate(18, list);
+	list = itemCreate(25, list);
+	list = itemCreate(3, list);
+	list = itemCreate(12, list);
+	start = list;
+	display(start);
+	insert (10,4);
+    display(start);
+    isEmpty();
+    display_item(3);
+	
+	getchar();
+	return 0;
+}
