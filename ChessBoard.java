@@ -1,14 +1,9 @@
 /*
- * Name:
- * Section Leader:
+ * Name: Aseel Molaldawila
  * File: ChessBoard.java
  * ------------------
  * This class represents the ChessBoard. Its job is to keep track of where all
- * of the pieces are. Since we just learned about two-dimensional arrays, it 
- * might be a good idea to use one here (just a hint). Currently, it doesn't do 
- * anything, but it does have four methods for you to fill in. These are the only
- * required methods in this class. As long as these work, feel free to do whatever
- * else you want to get this class working.
+ * of the pieces are.
  */
 
 public class ChessBoard extends DrawableObject{
@@ -19,7 +14,7 @@ public class ChessBoard extends DrawableObject{
 	/** a two-dimension array data structure to hold the chess pieces */
 	ChessPiece [] [] pieces = new ChessPiece [BOARD_SIZE] [BOARD_SIZE];
 	
-	/** Constructor for the ChessBoard class (do whatever you want with this) */
+	/** Constructor for the ChessBoard class */
 	public ChessBoard()
 	{
 		// add the black pieces on board
@@ -63,8 +58,7 @@ public class ChessBoard extends DrawableObject{
 		return pieces[row][col];
 	}
 	
-	/** Adds the specified ChessPiece to the ChessBoard (hint: ChessPieces know their
-	 * own rows and columns. You can use this to figure out where to place the piece)
+	/** Adds the specified ChessPiece to the ChessBoard
 	 */
 	public void addPiece(ChessPiece piece)
 	{
