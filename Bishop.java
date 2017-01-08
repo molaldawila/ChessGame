@@ -1,6 +1,5 @@
 /*
- * Name:
- * Section Leader:
+ * Name: Aseel Molaldawila
  * File: Bishop.java
  * ------------------
  * This class represents the Bishop type of chess piece. This piece can move and capture 
