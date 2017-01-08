@@ -99,7 +99,7 @@ public class Pawn extends ChessPiece{
 	}
 
 	/** Implementation of getType() method for the Pawn class. Provides a way to identify
-	 *  the Pawn-type chess piece as such (you don't need to change anything here)
+	 *  the Pawn-type chess piece as such
 	 */
 	public PieceType getType() 
 	{
