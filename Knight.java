@@ -19,7 +19,7 @@ public class Knight extends ChessPiece{
 	}		
 	
 	/** Method that returns a boolean indicating whether or not the king can legally move
-	 *  to the specified location (you need to fill this one in).
+	 *  to the specified location
 	 */
 	public boolean canMoveTo(int nextRow, int nextCol, ChessBoard board)
 	{
@@ -45,7 +45,7 @@ public class Knight extends ChessPiece{
 	}
 	
 	/** Implementation of getType() method for the Knight class. Provides a way to identify
-	 *  the Knight-type chess piece as such (you don't need to change anything here)
+	 *  the Knight-type chess piece as such
 	 */
 	public PieceType getType() 
 	{
