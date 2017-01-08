@@ -68,7 +68,7 @@ public class Rook extends ChessPiece{
 	}
 
 	/** Implementation of getType() method for the Rook class. Provides a way to identify
-	 *  the Rook-type chess piece as such (you don't need to change anything here)
+	 *  the Rook-type chess piece as such
 	 */
 	public PieceType getType() 
 	{
