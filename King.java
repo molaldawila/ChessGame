@@ -1,6 +1,5 @@
 /*
- * Name:
- * Section Leader:
+ * Name: Aseel Molaldawila
  * File: King.java
  * ------------------
  * This class represents the King type of chess piece. This piece can move (and capture) one 
@@ -19,7 +18,7 @@ public class King extends ChessPiece{
 	}	
 	
 	/** Method that returns a boolean indicating whether or not the king can legally move
-	 *  to the specified location (you need to fill this one in).
+	 *  to the specified location.
 	 */
 	public boolean canMoveTo(int nextRow, int nextCol, ChessBoard board)
 	{	
