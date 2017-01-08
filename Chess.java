@@ -29,14 +29,10 @@ public class Chess extends GraphicsProgram{
 	 *  ChessBoard objects */
 	public void init()
 	{
-		display = ChessDisplay.getInstance(this);			// This line is required, don't change it
+		display = ChessDisplay.getInstance(this);			 
 		board = new ChessBoard();
 		
-		display.useRealChessLabels(false);					// Use this method to change how the board is labeled
-															// on the screen. Passing in true will label the board
-															// like an official chessboard; passing in false will
-						  								   // label the board like it is indexed in an array and
-															// in ChessDisplay.
+		display.useRealChessLabels(true);					 
 	}
 	
 	/** The main method that runs the program */
