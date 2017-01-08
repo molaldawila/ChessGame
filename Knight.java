@@ -1,6 +1,5 @@
 /*
- * Name:
- * Section Leader:
+ * Name: Aseel Molaldawila
  * File: Knight.java
  * ------------------
  * This class represents the Knight type of chess piece. This piece can move only in 
