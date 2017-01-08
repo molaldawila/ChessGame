@@ -1,13 +1,12 @@
 /*
- * Name:
- * Section Leader:
+
+ * Name: Aseel Molaldawila
  * File: Pawn.java
  * ------------------
  * This class represents the Pawn type of chess piece. This piece can move only straight 
  * forward (away from your side toward the other side). In can normally move only one space
  * at a time, except on the first move, when it has the option of moving two spaces. The pawn,
- * although it moves only forward, captures only diagonally forward. Turns out, this makes it
- * the most difficult to implement in code (fair warning). For more information go 
+ * although it moves only forward, captures only diagonally forward.For more information go 
  * here: http://en.wikipedia.org/wiki/Pawn_(chess)
  */
 
@@ -24,7 +23,7 @@ public class Pawn extends ChessPiece{
 
 	private boolean isFirstMove;
 	/** Method that returns a boolean indicating whether or not the pawn can legally move
-	 *  to the specified location (you need to fill this one in).
+	 *  to the specified location.
 	 */
 	public boolean canMoveTo(int nextRow, int nextCol, ChessBoard board)
 	{
