@@ -36,7 +36,7 @@ public class King extends ChessPiece{
 	}
 	
 	/** Implementation of getType() method for the King class. Provides a way to identify
-	 *  the King-type chess piece as such (you don't need to change anything here)
+	 *  the King-type chess piece as such
 	 */
 	public PieceType getType() 
 	{
