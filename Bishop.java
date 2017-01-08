@@ -17,7 +17,7 @@ public class Bishop extends ChessPiece{
 	}	
 	
 	/** Method that returns a boolean indicating whether or not the bishop can legally move
-	 *  to the specified location (you need to fill this one in).
+	 *  to the specified location.
 	 */
 	public boolean canMoveTo(int nextRow, int nextCol, ChessBoard board)
 	{
@@ -72,7 +72,7 @@ public class Bishop extends ChessPiece{
 	}
 	
 	/** Implementation of getType() method for the Bishop class. Provides a way to identify
-	 *  the Bishop-type chess piece as such (you don't need to change anything here)
+	 *  the Bishop-type chess piece as such.
 	 */
 	public PieceType getType() 
 	{
