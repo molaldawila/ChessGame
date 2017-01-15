@@ -28,20 +28,11 @@ public class Knight extends ChessPiece{
 		int oneVerticalSpace = Math.abs(nextCol-this.col);
 		int oneHorizontalSpace = Math.abs(nextRow-this.row);
 
-		if(((twoHorizontalSpaces==2) && (oneVerticalSpace==1)) || ((oneHorizontalSpace==1) && (twoVerticalSpaces==2))){
-			if(board.pieces[nextRow][nextCol]!=null && board.pieceAt(nextRow, nextCol).color==board.pieceAt(this.row, this.col).color){
-				return false;
-			}
-			else
-				if(moveWouldCauseCheck(nextRow, nextCol, board)){
-					return false;
-				}
-				else
-					return true;			
-		}
-		else{
-			return false;
-		}
+		if(((twoHorizontalSpaces==2) && (oneVerticalSpace==1)) || ((oneHorizontalSpace==1) && (twoVerticalSpaces==2)))
+			if(board.pieces[nextRow][nextCol]==null || board.pieceAt(nextRow, nextCol).color != board.pieceAt(this.row, this.col).color){
+				if(!moveWouldCauseCheck(nextRow, nextCol, board))
+					return true;
+		return false;
 	}
 	
 	/** Implementation of getType() method for the Knight class. Provides a way to identify
